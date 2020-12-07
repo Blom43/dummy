@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dummy.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="White" Padding="24" CornerRadius="0">
+            <Label Text="Shareit" HorizontalTextAlignment="Start" TextColor="Black" FontSize="36" />
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                
+            </Grid.ColumnDefinitions>
+            
+            <!--row 0 first row-->
+            
+            <Button Grid.Column="0" 
+                WidthRequest      ="80"
+                HeightRequest     ="80"
+                CornerRadius      ="40"
+                BackgroundColor="Blue"
+                Text="Local"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" 
+               
+                    />
+            <!--column 1-->
+       
+            <Button Grid.Column="1"
+                WidthRequest      ="80"
+                HeightRequest     ="80"
+                CornerRadius      ="40"
+                BackgroundColor="Blue"
+               Text="Send"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <!--column 2-->
+            
+            
+            <Button Grid.Column="2"
+                WidthRequest      ="80"
+                HeightRequest     ="80"
+                CornerRadius      ="40"
+                BackgroundColor="Blue"
+               Text="Recieve"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <!--column 3-->
+            
+            
+                 
+            <Button Grid.Column="3"
+                WidthRequest      ="80"
+                HeightRequest     ="80"
+                CornerRadius      ="40"
+                BackgroundColor="Blue"
+               Text="Invite"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+            
+
+
+            <!--end first row-->
+            
+        </Grid>
+
+        <Button Grid.Row="0" Text="Install" BorderColor="Blue"  BorderWidth="1" FontAttributes="Bold" BackgroundColor="Blue" BorderRadius="35" TextColor="White" HorizontalOptions="End" WidthRequest="160" HeightRequest="50" Margin="0,0,20,22" VerticalOptions="End"/>
+    </StackLayout>
+
+
+    
+</ContentPage>
+
+
